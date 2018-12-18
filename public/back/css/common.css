@@ -1,0 +1,145 @@
+/* 公共样式 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  /* 去除下划线 */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.red {
+  color: #a94442;
+}
+
+/* 乐淘左侧边框 */
+.it_aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.it_aside.hidemenu {
+  left: -180px;
+}
+
+.it_aside .brand {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  background-color: #367fa9;
+}
+
+.it_aside .brand a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.it_aside .user {
+  padding-top: 30px;
+}
+
+.it_aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.it_aside .user p {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.it_aside .nav a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 40px;
+  border-left: 3px solid transparent;
+  /* 透明的左边框 */
+}
+
+.it_aside .nav a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
+
+.it_aside .nav a i {
+  margin-right: 4px;
+}
+
+.it_aside .nav .child a {
+  padding-left: 60px;
+}
+
+.it_aside .nav .child {
+  display: none;
+}
+
+/* 乐淘左侧边框完成 */
+
+/* 乐淘右侧开始 */
+.lt_main {
+  padding-left: 180px;
+  padding-top: 50px;
+  height: 2000px;
+  transition: all 1s;
+}
+
+.lt_main.hidemenu {
+  padding-left: 0;
+}
+
+.it_topbar {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color: #3c8dbc;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-left: 180px;
+  transition: all 1s;
+}
+
+.it_topbar.hidemenu {
+  padding-left: 0;
+}
+
+.it_topbar .icon_left,
+.it_topbar .icon_right {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.eacharts_left,
+.eacharts_right {
+  width: 48%;
+  height: 400px;
+  background-color: pink;
+}
