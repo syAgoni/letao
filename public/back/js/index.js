@@ -98,7 +98,7 @@ $(function () {
             //控制额外的阴影样式效果
             itemStyle: {
                 emphasis: {
-                    shadowBlur: 10,
+                    shadowBlur: 10, //阴影度
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
