@@ -84,6 +84,33 @@
 
     </div>
 
+    <!-- 添加模态框  -->
+    <div class="modal fade" id="addModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <form id="form">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h4 class="modal-title">添加分类</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 每一行一个 form-group 表单校验插件依赖于这个form-group父元素-->
+
+                        <div class="form-group">
+                            <input type="text" name="categoryName" class="form-control" placeholder="请输入一级分类">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="submit" class="btn btn-primary">添加</button>
+                        <!-- submit 提交 -->
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- Modal -->
     <!-- 模态框大小:modal-lg大 默认大小 modal-sm小 -->
     <div class="modal fade" id="logoutModal" tabindex="-1">
@@ -103,6 +130,10 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- 模板引擎 -->
     <script type="text/html" id="firstTpl">
         {{each rows v i}}
             <tr>
