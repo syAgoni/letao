@@ -136,3 +136,11 @@ ul {
   color: #fff;
   font-size: 20px;
 }
+
+/* 让表格内容水平垂直居中 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+  /* 元素的垂直对齐方式 */
+}

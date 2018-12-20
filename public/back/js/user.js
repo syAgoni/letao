@@ -13,7 +13,7 @@ $(function () {
             url: '/user/queryUser',
             data: {
                 page: currentPage,
-                pagesize: pageSize
+                pageSize: pageSize
             },
             dataType: 'json',
             success: function (info) {

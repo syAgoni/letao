@@ -138,7 +138,7 @@
                     isDelete 0 => 用户已禁用
                 -->
                 <td>{{v.isDelete === 1? "正常":"已禁用"}}</td>
-                <td data-id = {{v.id}}>
+                <td data-id = "{{v.id}}">
                     {{if v.isDelete === 1}}
                     <button class="btn btn-danger">禁用</button>
                     {{else}}
